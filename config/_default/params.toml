@@ -1,0 +1,47 @@
+# Theme Parameters for Blowfish
+
+# Color scheme - slate is minimal and clean
+colorScheme = "slate"
+
+# Appearance
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+# Search
+enableSearch = true
+
+# Layout
+showScrollToTop = true
+disableImageOptimization = false
+
+# Homepage
+[homepage]
+  layout = "page"
+  showRecent = false
+  cardView = false
+
+# Article
+[article]
+  showDate = false
+  showAuthor = false
+  showBreadcrumbs = false
+  showPagination = false
+  showReadingTime = false
+  showTableOfContents = true
+  showRelatedContent = false
+
+# Header
+[header]
+  layout = "basic"
+
+# Footer
+[footer]
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+# List
+[list]
+  showCards = false
+  groupByYear = false

@@ -1,0 +1,68 @@
+{
+  "screening": [
+    {
+      "tool": "otto-SR",
+      "sensitivity": "96.7%",
+      "specificity": "97.9%",
+      "notes": "GPT-4.1 based"
+    },
+    {
+      "tool": "Human dual review",
+      "sensitivity": "81.7%",
+      "specificity": "98.1%",
+      "notes": "Traditional approach"
+    },
+    {
+      "tool": "Rayyan AI",
+      "sensitivity": "97-99%",
+      "specificity": "19-58%",
+      "notes": "At <2.5 threshold"
+    },
+    {
+      "tool": "ASReview",
+      "sensitivity": "Variable",
+      "specificity": "Variable",
+      "notes": "Depends on dataset"
+    }
+  ],
+  "extraction": [
+    {
+      "model": "GPT-based (pooled)",
+      "precision": "83.0%",
+      "recall": "86.0%",
+      "notes": "Mean across studies"
+    },
+    {
+      "model": "BERT-based",
+      "precision": "Lower",
+      "recall": "Lower",
+      "notes": "Compared to GPT"
+    },
+    {
+      "model": "otto-SR extraction",
+      "precision": "93.1% accuracy",
+      "recall": "-",
+      "notes": "o3-mini-high"
+    }
+  ],
+  "timeSavings": [
+    {
+      "stage": "Screening",
+      "traditional": "8-12 weeks",
+      "aiAssisted": "2-3 weeks",
+      "reduction": "~75%"
+    },
+    {
+      "stage": "Data extraction",
+      "traditional": "10-16 weeks",
+      "aiAssisted": "3-5 weeks",
+      "reduction": "~70%"
+    },
+    {
+      "stage": "Per-paper extraction",
+      "traditional": "36 min",
+      "aiAssisted": "27 sec + 13 min review",
+      "reduction": "~60%"
+    }
+  ]
+}

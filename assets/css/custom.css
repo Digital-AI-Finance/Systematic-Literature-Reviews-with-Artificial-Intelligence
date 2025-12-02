@@ -1,0 +1,338 @@
+/* Custom Styles for SLR with AI Website */
+
+/* Smooth scrolling for anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section styling */
+section {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--color-neutral-200);
+}
+
+.dark section {
+  border-bottom-color: var(--color-neutral-700);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+/* Table Controls */
+.table-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.table-controls .search {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  background: var(--color-neutral-50);
+}
+
+.dark .table-controls .search {
+  background: var(--color-neutral-800);
+  border-color: var(--color-neutral-600);
+  color: var(--color-neutral-100);
+}
+
+.table-controls .filter-type {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 0.375rem;
+  background: var(--color-neutral-50);
+}
+
+.dark .table-controls .filter-type {
+  background: var(--color-neutral-800);
+  border-color: var(--color-neutral-600);
+  color: var(--color-neutral-100);
+}
+
+/* Tool Tables */
+.tool-table,
+.benchmark-table,
+.llm-apps-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.tool-table th,
+.tool-table td,
+.benchmark-table th,
+.benchmark-table td,
+.llm-apps-table th,
+.llm-apps-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-neutral-200);
+}
+
+.dark .tool-table th,
+.dark .tool-table td,
+.dark .benchmark-table th,
+.dark .benchmark-table td,
+.dark .llm-apps-table th,
+.dark .llm-apps-table td {
+  border-bottom-color: var(--color-neutral-700);
+}
+
+.tool-table th,
+.benchmark-table th,
+.llm-apps-table th {
+  background: var(--color-neutral-100);
+  font-weight: 600;
+}
+
+.dark .tool-table th,
+.dark .benchmark-table th,
+.dark .llm-apps-table th {
+  background: var(--color-neutral-800);
+}
+
+.tool-table th.sort {
+  cursor: pointer;
+  user-select: none;
+}
+
+.tool-table th.sort:hover {
+  background: var(--color-neutral-200);
+}
+
+.dark .tool-table th.sort:hover {
+  background: var(--color-neutral-700);
+}
+
+.tool-table th.sort::after {
+  content: " \2195";
+  opacity: 0.5;
+}
+
+/* Benchmark highlight */
+.benchmark-table .highlight {
+  color: var(--color-primary-600);
+  font-weight: 600;
+}
+
+.dark .benchmark-table .highlight {
+  color: var(--color-primary-400);
+}
+
+/* Paper Grid */
+.paper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Paper Cards */
+.paper-card {
+  padding: 1.5rem;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 0.5rem;
+  background: var(--color-neutral-50);
+  transition: box-shadow 0.2s ease;
+}
+
+.dark .paper-card {
+  background: var(--color-neutral-800);
+  border-color: var(--color-neutral-700);
+}
+
+.paper-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark .paper-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.paper-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.paper-year {
+  background: var(--color-primary-100);
+  color: var(--color-primary-700);
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.dark .paper-year {
+  background: var(--color-primary-900);
+  color: var(--color-primary-300);
+}
+
+.paper-category {
+  text-transform: capitalize;
+  color: var(--color-neutral-500);
+}
+
+.paper-title {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.paper-authors {
+  color: var(--color-neutral-600);
+  font-size: 0.875rem;
+  margin: 0.25rem 0;
+}
+
+.dark .paper-authors {
+  color: var(--color-neutral-400);
+}
+
+.paper-description {
+  font-size: 0.875rem;
+  color: var(--color-neutral-700);
+  margin: 0.5rem 0;
+}
+
+.dark .paper-description {
+  color: var(--color-neutral-300);
+}
+
+.paper-journal {
+  font-size: 0.8rem;
+  color: var(--color-neutral-500);
+  margin: 0.5rem 0;
+}
+
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-neutral-200);
+}
+
+.dark .paper-actions {
+  border-top-color: var(--color-neutral-700);
+}
+
+.doi-link {
+  font-size: 0.75rem;
+  color: var(--color-primary-600);
+  text-decoration: none;
+}
+
+.doi-link:hover {
+  text-decoration: underline;
+}
+
+.download-btn {
+  padding: 0.375rem 0.75rem;
+  background: var(--color-primary-600);
+  color: white;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+  background: var(--color-primary-700);
+}
+
+/* PDF Preview */
+.pdf-preview {
+  width: 100%;
+}
+
+.pdf-preview summary {
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
+  background: var(--color-neutral-200);
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  transition: background 0.2s ease;
+}
+
+.dark .pdf-preview summary {
+  background: var(--color-neutral-700);
+}
+
+.pdf-preview summary:hover {
+  background: var(--color-neutral-300);
+}
+
+.dark .pdf-preview summary:hover {
+  background: var(--color-neutral-600);
+}
+
+.pdf-container {
+  margin-top: 0.75rem;
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.dark .pdf-container {
+  border-color: var(--color-neutral-600);
+}
+
+.pdf-container iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* Code blocks */
+code {
+  background: var(--color-neutral-100);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.dark code {
+  background: var(--color-neutral-800);
+}
+
+/* Links in tables */
+.tool-table a,
+.paper-card a {
+  color: var(--color-primary-600);
+  text-decoration: none;
+}
+
+.tool-table a:hover,
+.paper-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .paper-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-table,
+  .benchmark-table {
+    font-size: 0.8rem;
+  }
+
+  .tool-table th,
+  .tool-table td,
+  .benchmark-table th,
+  .benchmark-table td {
+    padding: 0.5rem;
+  }
+}

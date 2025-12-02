@@ -1,0 +1,4 @@
+# Root Hugo configuration - points to config directory
+# All settings are in config/_default/
+
+theme = "blowfish"

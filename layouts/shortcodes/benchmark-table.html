@@ -1,0 +1,72 @@
+{{/* Benchmark Tables Shortcode */}}
+{{ $benchmarks := .Site.Data.benchmarks }}
+{{ $type := .Get "type" | default "screening" }}
+
+{{ if eq $type "screening" }}
+<table class="benchmark-table">
+  <thead>
+    <tr>
+      <th>Tool/Method</th>
+      <th>Sensitivity</th>
+      <th>Specificity</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $benchmarks.screening }}
+    <tr>
+      <td><strong>{{ .tool }}</strong></td>
+      <td>{{ .sensitivity }}</td>
+      <td>{{ .specificity }}</td>
+      <td>{{ .notes }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+{{ end }}
+
+{{ if eq $type "extraction" }}
+<table class="benchmark-table">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $benchmarks.extraction }}
+    <tr>
+      <td><strong>{{ .model }}</strong></td>
+      <td>{{ .precision }}</td>
+      <td>{{ .recall }}</td>
+      <td>{{ .notes }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+{{ end }}
+
+{{ if eq $type "time" }}
+<table class="benchmark-table">
+  <thead>
+    <tr>
+      <th>Stage</th>
+      <th>Traditional</th>
+      <th>AI-Assisted</th>
+      <th>Reduction</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $benchmarks.timeSavings }}
+    <tr>
+      <td><strong>{{ .stage }}</strong></td>
+      <td>{{ .traditional }}</td>
+      <td>{{ .aiAssisted }}</td>
+      <td class="highlight">{{ .reduction }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+{{ end }}

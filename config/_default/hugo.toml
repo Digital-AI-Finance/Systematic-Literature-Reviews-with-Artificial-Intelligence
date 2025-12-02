@@ -1,0 +1,21 @@
+# Main Hugo Configuration
+baseURL = "https://digital-ai-finance.github.io/Systematic-Literature-Reviews-with-Artificial-Intelligence/"
+languageCode = "en-us"
+title = "Systematic Literature Reviews with AI"
+theme = "blowfish"
+
+# Enable JSON output for search
+[outputs]
+  home = ["HTML", "JSON", "RSS"]
+
+# Markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+# Build settings
+[build]
+  writeStats = true

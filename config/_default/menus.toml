@@ -1,0 +1,31 @@
+# Navigation Menu - Anchor links for single-page layout
+
+[[main]]
+  name = "Overview"
+  pageRef = "/#overview"
+  weight = 10
+
+[[main]]
+  name = "Tools"
+  pageRef = "/#tools"
+  weight = 20
+
+[[main]]
+  name = "Papers"
+  pageRef = "/#papers"
+  weight = 30
+
+[[main]]
+  name = "Guidelines"
+  pageRef = "/#guidelines"
+  weight = 40
+
+[[main]]
+  name = "Benchmarks"
+  pageRef = "/#benchmarks"
+  weight = 50
+
+[[main]]
+  name = "Resources"
+  pageRef = "/#resources"
+  weight = 60

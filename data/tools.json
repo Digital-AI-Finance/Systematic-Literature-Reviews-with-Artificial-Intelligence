@@ -1,0 +1,93 @@
+{
+  "openSource": [
+    {
+      "name": "ASReview",
+      "description": "Active learning for systematic reviews",
+      "features": "Open-source, 95% workload reduction, Python-based",
+      "link": "https://asreview.nl/",
+      "github": "https://github.com/asreview/asreview"
+    },
+    {
+      "name": "RobotReviewer",
+      "description": "ML system for RCT assessment",
+      "features": "Free, web-based, bias assessment",
+      "link": "https://www.robotreviewer.net/",
+      "github": ""
+    },
+    {
+      "name": "Colandr",
+      "description": "Open-source screening tool",
+      "features": "Free, collaborative",
+      "link": "https://www.colandrapp.com/",
+      "github": ""
+    },
+    {
+      "name": "FAST2",
+      "description": "Active learning screening",
+      "features": "Open source",
+      "link": "https://github.com/OHNLP/FAST2",
+      "github": "https://github.com/OHNLP/FAST2"
+    }
+  ],
+  "commercial": [
+    {
+      "name": "Rayyan",
+      "description": "AI-powered review management",
+      "pricing": "Free tier available",
+      "link": "https://www.rayyan.ai/"
+    },
+    {
+      "name": "Elicit",
+      "description": "AI research assistant",
+      "pricing": "Free: basic / Pro: $42/mo",
+      "link": "https://elicit.com/"
+    },
+    {
+      "name": "Covidence",
+      "description": "Cochrane-recommended tool",
+      "pricing": "Free for Cochrane reviews",
+      "link": "https://www.covidence.org/"
+    },
+    {
+      "name": "DistillerSR",
+      "description": "Enterprise review software",
+      "pricing": "Subscription-based",
+      "link": "https://www.distillersr.com/"
+    },
+    {
+      "name": "Laser AI",
+      "description": "Living systematic reviews",
+      "pricing": "Commercial",
+      "link": "https://www.laser.ai/"
+    },
+    {
+      "name": "otto-SR",
+      "description": "End-to-end LLM workflow",
+      "pricing": "Web platform",
+      "link": "https://ottosr.com/"
+    },
+    {
+      "name": "EPPI-Reviewer",
+      "description": "Comprehensive review tool",
+      "pricing": "Subscription",
+      "link": "https://eppi.ioe.ac.uk/"
+    }
+  ],
+  "llmApps": [
+    {
+      "name": "Systematic Review Extractor Pro",
+      "application": "Data extraction",
+      "model": "Custom GPT"
+    },
+    {
+      "name": "otto-SR Screening Agent",
+      "application": "Abstract/full-text screening",
+      "model": "GPT-4.1"
+    },
+    {
+      "name": "otto-SR Extraction Agent",
+      "application": "Data extraction",
+      "model": "o3-mini-high"
+    }
+  ]
+}

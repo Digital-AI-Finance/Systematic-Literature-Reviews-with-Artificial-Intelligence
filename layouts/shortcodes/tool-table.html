@@ -1,0 +1,71 @@
+{{/* Sortable/Filterable Tool Table Shortcode */}}
+{{ $tools := .Site.Data.tools }}
+{{ $type := .Get "type" | default "all" }}
+
+<div class="tool-table-wrapper" id="tool-list-{{ $type }}">
+  <div class="table-controls">
+    <input class="search" placeholder="Filter tools..." />
+    {{ if eq $type "all" }}
+    <select class="filter-type">
+      <option value="">All Types</option>
+      <option value="Open Source">Open Source</option>
+      <option value="Commercial">Commercial</option>
+    </select>
+    {{ end }}
+  </div>
+
+  <table class="tool-table">
+    <thead>
+      <tr>
+        <th class="sort" data-sort="name">Tool</th>
+        <th class="sort" data-sort="desc">Description</th>
+        {{ if or (eq $type "all") (eq $type "open") }}
+        <th class="sort" data-sort="features">Features</th>
+        {{ end }}
+        {{ if or (eq $type "all") (eq $type "commercial") }}
+        <th class="sort" data-sort="pricing">Pricing</th>
+        {{ end }}
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody class="list">
+      {{ if or (eq $type "all") (eq $type "open") }}
+      {{ range $tools.openSource }}
+      <tr>
+        <td class="name"><strong>{{ .name }}</strong></td>
+        <td class="desc">{{ .description }}</td>
+        <td class="features">{{ .features }}</td>
+        {{ if eq $type "all" }}<td class="pricing">-</td>{{ end }}
+        <td><a href="{{ .link }}" target="_blank" rel="noopener">Visit</a>
+        {{ if .github }}<a href="{{ .github }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+        </td>
+      </tr>
+      {{ end }}
+      {{ end }}
+
+      {{ if or (eq $type "all") (eq $type "commercial") }}
+      {{ range $tools.commercial }}
+      <tr>
+        <td class="name"><strong>{{ .name }}</strong></td>
+        <td class="desc">{{ .description }}</td>
+        {{ if eq $type "all" }}<td class="features">-</td>{{ end }}
+        <td class="pricing">{{ .pricing }}</td>
+        <td><a href="{{ .link }}" target="_blank" rel="noopener">Visit</a></td>
+      </tr>
+      {{ end }}
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof List !== 'undefined') {
+    var options = {
+      valueNames: ['name', 'desc', 'features', 'pricing'],
+      searchClass: 'search'
+    };
+    new List('tool-list-{{ $type }}', options);
+  }
+});
+</script>

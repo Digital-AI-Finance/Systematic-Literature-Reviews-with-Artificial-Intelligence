@@ -1,0 +1,41 @@
+{{/* Paper List with PDF Previews */}}
+{{ $papers := .Site.Data.papers }}
+{{ $category := .Get "category" | default "all" }}
+
+<div class="paper-grid">
+  {{ range $papers }}
+  {{ if or (eq $category "all") (eq .category $category) }}
+  <div class="paper-card">
+    <div class="paper-header">
+      <span class="paper-year">{{ .year }}</span>
+      <span class="paper-category">{{ .category }}</span>
+    </div>
+    <h4 class="paper-title">{{ .title }}</h4>
+    <p class="paper-authors">{{ .authors }}</p>
+    <p class="paper-description">{{ .description }}</p>
+    <p class="paper-journal"><em>{{ .journal }}</em>
+      {{ if .volume }}{{ .volume }}{{ end }}
+      {{ if .pages }}, {{ .pages }}{{ end }}
+    </p>
+
+    <div class="paper-actions">
+      {{ if .doi }}
+      <a href="https://doi.org/{{ .doi }}" target="_blank" rel="noopener" class="doi-link">
+        DOI: {{ .doi }}
+      </a>
+      {{ end }}
+
+      {{ if .pdf }}
+      <details class="pdf-preview">
+        <summary>Preview PDF</summary>
+        <div class="pdf-container">
+          <iframe src="/papers/{{ .pdf }}#view=FitH" loading="lazy"></iframe>
+        </div>
+      </details>
+      <a href="/papers/{{ .pdf }}" download class="download-btn">Download PDF</a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+  {{ end }}
+</div>

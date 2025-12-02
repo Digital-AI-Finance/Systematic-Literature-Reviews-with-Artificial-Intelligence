@@ -1,0 +1,21 @@
+{{/* LLM Applications Table */}}
+{{ $tools := .Site.Data.tools }}
+
+<table class="llm-apps-table">
+  <thead>
+    <tr>
+      <th>Tool/Method</th>
+      <th>Application</th>
+      <th>Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $tools.llmApps }}
+    <tr>
+      <td><strong>{{ .name }}</strong></td>
+      <td>{{ .application }}</td>
+      <td><code>{{ .model }}</code></td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>

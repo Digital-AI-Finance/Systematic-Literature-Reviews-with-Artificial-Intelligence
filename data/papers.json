@@ -1,0 +1,98 @@
+[
+  {
+    "title": "ASReview Framework",
+    "authors": "van de Schoot, R. et al.",
+    "description": "An open source machine learning framework for efficient and transparent systematic reviews",
+    "journal": "Nature Machine Intelligence",
+    "volume": "3",
+    "pages": "125-133",
+    "year": 2021,
+    "doi": "10.1038/s42256-020-00287-7",
+    "pdf": "",
+    "category": "foundational"
+  },
+  {
+    "title": "Rayyan Original Paper",
+    "authors": "Ouzzani, M. et al.",
+    "description": "Rayyan - a web and mobile app for systematic reviews",
+    "journal": "Systematic Reviews",
+    "volume": "5",
+    "pages": "210",
+    "year": 2016,
+    "doi": "10.1186/s13643-016-0384-4",
+    "pdf": "",
+    "category": "foundational"
+  },
+  {
+    "title": "otto-SR: Automation of Systematic Reviews with LLMs",
+    "authors": "otto-SR Team",
+    "description": "Demonstrated 96.7% sensitivity, 97.9% specificity in screening",
+    "journal": "medRxiv",
+    "volume": "",
+    "pages": "",
+    "year": 2025,
+    "doi": "10.1101/2025.06.13.25329541",
+    "pdf": "otto-SR_manuscript.pdf",
+    "category": "llm"
+  },
+  {
+    "title": "LLMs for Systematic Reviews: Scoping Review",
+    "authors": "Various",
+    "description": "Large language models for conducting systematic reviews: on the rise, but not yet ready for use",
+    "journal": "Journal of Clinical Epidemiology",
+    "volume": "",
+    "pages": "",
+    "year": 2025,
+    "doi": "",
+    "pdf": "LLM_systematic_reviews_scoping.pdf",
+    "category": "llm"
+  },
+  {
+    "title": "GPT-4 Evaluation for SLR",
+    "authors": "Khraisha, Q. et al.",
+    "description": "Can large language models replace humans in systematic reviews?",
+    "journal": "Research Synthesis Methods",
+    "volume": "",
+    "pages": "",
+    "year": 2024,
+    "doi": "10.1002/jrsm.1715",
+    "pdf": "",
+    "category": "llm"
+  },
+  {
+    "title": "LLM-Assisted SLR System",
+    "authors": "Various",
+    "description": "Enhancing systematic literature reviews with generative AI",
+    "journal": "JAMIA",
+    "volume": "32",
+    "pages": "616",
+    "year": 2025,
+    "doi": "",
+    "pdf": "",
+    "category": "llm"
+  },
+  {
+    "title": "PRISMA-AI Guidelines",
+    "authors": "Various",
+    "description": "PRISMA AI reporting guidelines for systematic reviews and meta-analyses on AI in healthcare",
+    "journal": "Nature Medicine",
+    "volume": "",
+    "pages": "",
+    "year": 2023,
+    "doi": "10.1038/s41591-022-02139-w",
+    "pdf": "",
+    "category": "methodology"
+  },
+  {
+    "title": "Practical Guide to ML in Research Synthesis",
+    "authors": "Various",
+    "description": "Toward systematic review automation: a practical guide",
+    "journal": "Systematic Reviews",
+    "volume": "",
+    "pages": "",
+    "year": 2019,
+    "doi": "10.1186/s13643-019-1074-9",
+    "pdf": "",
+    "category": "methodology"
+  }
+]
