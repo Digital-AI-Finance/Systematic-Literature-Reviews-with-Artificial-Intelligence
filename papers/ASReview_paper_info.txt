@@ -1,0 +1,8 @@
+ASReview: An open source machine learning framework for efficient and transparent systematic reviews
+
+Authors: van de Schoot, R., de Bruin, J., Schram, R. et al.
+Journal: Nature Machine Intelligence 3, 125-133 (2021)
+DOI: https://doi.org/10.1038/s42256-020-00287-7
+
+GitHub: https://github.com/asreview/asreview
+Website: https://asreview.nl/
