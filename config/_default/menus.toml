@@ -2,30 +2,30 @@
 
 [[main]]
   name = "Overview"
-  pageRef = "/#overview"
+  url = "#overview"
   weight = 10
 
 [[main]]
   name = "Tools"
-  pageRef = "/#tools"
+  url = "#tools"
   weight = 20
 
 [[main]]
   name = "Papers"
-  pageRef = "/#papers"
+  url = "#papers"
   weight = 30
 
 [[main]]
   name = "Guidelines"
-  pageRef = "/#guidelines"
+  url = "#guidelines"
   weight = 40
 
 [[main]]
   name = "Benchmarks"
-  pageRef = "/#benchmarks"
+  url = "#benchmarks"
   weight = 50
 
 [[main]]
   name = "Resources"
-  pageRef = "/#resources"
+  url = "#resources"
   weight = 60
