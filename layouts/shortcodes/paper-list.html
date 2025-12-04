@@ -29,10 +29,10 @@
       <details class="pdf-preview">
         <summary>Preview PDF</summary>
         <div class="pdf-container">
-          <iframe src="/papers/{{ .pdf }}#view=FitH" loading="lazy"></iframe>
+          <iframe src="{{ printf "papers/%s" .pdf | relURL }}#view=FitH" loading="lazy"></iframe>
         </div>
       </details>
-      <a href="/papers/{{ .pdf }}" download class="download-btn">Download PDF</a>
+      <a href="{{ printf "papers/%s" .pdf | relURL }}" download class="download-btn">Download PDF</a>
       {{ end }}
     </div>
   </div>

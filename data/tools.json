@@ -24,9 +24,9 @@
     {
       "name": "FAST2",
       "description": "Active learning screening",
-      "features": "Open source",
-      "link": "https://github.com/OHNLP/FAST2",
-      "github": "https://github.com/OHNLP/FAST2"
+      "features": "Open source, Python 3",
+      "link": "https://github.com/fastread/src",
+      "github": "https://github.com/fastread/src"
     }
   ],
   "commercial": [
